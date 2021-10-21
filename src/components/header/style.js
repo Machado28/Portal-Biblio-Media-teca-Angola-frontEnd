@@ -7,7 +7,7 @@ const DefaultFlexBox = styled.div`
  justify-content:flex-end;
 `;
 
-const HeaderStyled = styled(DefaultFlexBox)`
+const HeaderStyled  = styled( DefaultFlexBox )`
    background: #fff;
   border-bottom: #eee 2px solid;
   height: 100px;

@@ -3,10 +3,10 @@ const dataTop = [
     name: "Porquê nos esconlher ?",
   },
   {
-    name: "confiaça",
+    name: "confiaça ",
   },
   {
-    name: "apoio ao cliente",
+    name: "apoio ao cliente ",
   },
 ];
 export default dataTop;

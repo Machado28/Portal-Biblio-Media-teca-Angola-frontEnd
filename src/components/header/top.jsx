@@ -7,7 +7,7 @@ const Top = (prop) => {
       {prop.listMenu.map((item) => {
         return <li>{item.name}</li>;
       })}
-    </TopStyled>
+    </TopStyled >
   );
 };
 export default Top;
