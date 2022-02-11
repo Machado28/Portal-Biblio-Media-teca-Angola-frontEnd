@@ -1,24 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React,{useEffect} from "react";
+import { Routes } from "./routes/index.js";
+import GlobalStyle from './styles/index'
+
 
 export default function App() {
-  const [location, setLocation] = useState({});
-
-  useEffect(() => {
-    const watchId = navigator.geolocation.watchPosition(handlePositionReceived);
-
-    return () => navigator.geolocation.clearWatch(watchId);
-  }, []);
-
-  function handlePositionReceived({ coords }) {
-    const { latitude, longitude } = coords;
-
-    setLocation({ latitude, longitude });
-  }
-
+ 
+ 
+  // useEffect(() => {
+  //  WebFont.load({
+  //    google: {
+  //      families: ['Droid Sans', 'Chilanka']
+  //    }
+  //  });
+  // }, []);
   return (
     <>
-      Latitude: {location.latitude} <br />
-      Longitude: {location.longitude}
+    <GlobalStyle></GlobalStyle>
+      <Routes/>
     </>
   );
 }
